@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Python Functions一种代码组织与重复使用的方法 让带么具有很强的可读性格式: 12345def my_function(x,y,z=1.5):    if z&amp;gt;1:        return z * (x+y)    else:        return z/(x+y) 1  keyword:   1. 声明与返回值关键字 def 和 return   2 argument">
+<meta name="description" content="Python Functions一种代码组织与重复使用的方法 让带么具有很强的可读性格式: 12345def my_function(x,y,z=1.5):    if z&amp;gt;1:        return z * (x+y)    else:        return z/(x+y) ##1  keyword:   1. 声明与返回值关键字 def 和 return   ##2 argu">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python Function">
 <meta property="og:url" content="http://yoursite.com/2018/04/08/Python_function/index.html">
 <meta property="og:site_name" content="xiaojkql">
-<meta property="og:description" content="Python Functions一种代码组织与重复使用的方法 让带么具有很强的可读性格式: 12345def my_function(x,y,z=1.5):    if z&amp;gt;1:        return z * (x+y)    else:        return z/(x+y) 1  keyword:   1. 声明与返回值关键字 def 和 return   2 argument">
+<meta property="og:description" content="Python Functions一种代码组织与重复使用的方法 让带么具有很强的可读性格式: 12345def my_function(x,y,z=1.5):    if z&amp;gt;1:        return z * (x+y)    else:        return z/(x+y) ##1  keyword:   1. 声明与返回值关键字 def 和 return   ##2 argu">
 <meta property="og:locale" content="Chinese">
-<meta property="og:updated_time" content="2018-04-08T15:48:02.504Z">
+<meta property="og:updated_time" content="2018-04-08T15:54:44.755Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python Function">
-<meta name="twitter:description" content="Python Functions一种代码组织与重复使用的方法 让带么具有很强的可读性格式: 12345def my_function(x,y,z=1.5):    if z&amp;gt;1:        return z * (x+y)    else:        return z/(x+y) 1  keyword:   1. 声明与返回值关键字 def 和 return   2 argument">
+<meta name="twitter:description" content="Python Functions一种代码组织与重复使用的方法 让带么具有很强的可读性格式: 12345def my_function(x,y,z=1.5):    if z&amp;gt;1:        return z * (x+y)    else:        return z/(x+y) ##1  keyword:   1. 声明与返回值关键字 def 和 return   ##2 argu">
 
 
 
@@ -384,16 +384,16 @@
       
         <h1 id="Python-Functions"><a href="#Python-Functions" class="headerlink" title="Python Functions"></a>Python Functions</h1><p><em>一种代码组织与重复使用的方法</em> <em>让带么具有很强的可读性</em><br>格式:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_function</span><span class="params">(x,y,z=<span class="number">1.5</span>)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> z&gt;<span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> z * (x+y)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> z/(x+y)</span><br></pre></td></tr></table></figure>
-<p>1 <strong> keyword</strong>:  </p>
+<p>##1 <strong> keyword</strong>:  </p>
 <pre><code>1. 声明与返回值关键字 def 和 return  
-</code></pre><p>2 <strong>arguments</strong>–输入变量声明</p>
-<pre><code>1. positional : 没有预设默认值，调用函数时必须给与其初始值---想x,y即是
+</code></pre><p>##2 <strong>arguments</strong>–输入变量声明</p>
+<pre><code> 1. positional : 没有预设默认值，调用函数时必须给与其初始值---想x,y即是
 2. keyword: 给定了默认值，调用函数时给不给其初始值都行，z即是
 3. 注意--keyword必须在positional后面
-</code></pre><p>3 <strong>调用格式</strong></p>
+</code></pre><p>##3 <strong>调用格式</strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">my_function(<span class="number">5</span>, <span class="number">6</span>, z=<span class="number">0.7</span>)</span><br><span class="line">my_function(<span class="number">3.14</span>, <span class="number">7</span>, <span class="number">3.5</span>)</span><br><span class="line">my_function(<span class="number">10</span>, <span class="number">20</span>)</span><br><span class="line">my_function(x=<span class="number">5</span>, y=<span class="number">6</span>, z=<span class="number">7</span>)</span><br><span class="line">my_function(y=<span class="number">6</span>, x=<span class="number">5</span>, z=<span class="number">7</span>)</span><br></pre></td></tr></table></figure>
 <pre><code>77
-</code></pre><p>4 <strong>命名空间</strong> namespace</p>
+</code></pre><p>##4 <strong>命名空间</strong> namespace</p>
 <pre><code>1. local  当使用函数时，python默认的变量为局部，当函数运行完，变量即消失
 2. global 全局变量，使用时必须使用 global 关键字进行定义，global a
 </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">()</span>:</span></span><br><span class="line">    d = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">        d.append(i)</span><br><span class="line">func()</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure>
@@ -412,13 +412,13 @@ NameError: name &apos;d&apos; is not defined
 <pre><code>[0, 1, 2, 3, 4]
 </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">e = [] <span class="comment">##定义在外层也是当作全局变量进行处理</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">        e.append(i)</span><br><span class="line">func()</span><br><span class="line">print(e)</span><br></pre></td></tr></table></figure>
 <pre><code>[0, 1, 2, 3, 4]
-</code></pre><p>5 <strong>返回多个值</strong></p>
+</code></pre><p>##5 <strong>返回多个值</strong></p>
 <pre><code>1. 操作 return a,b,c or return{&apos;a&apos;: a, &quot;b&quot;: b, &quot;c&quot;: c}---实际是返回一个元组然后进行unpacking
 </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">()</span>:</span></span><br><span class="line">    a = <span class="number">5</span></span><br><span class="line">    b = <span class="number">6</span></span><br><span class="line">    c = <span class="number">7</span></span><br><span class="line">    <span class="keyword">return</span> a, b, c</span><br><span class="line">a, b, c = f()</span><br><span class="line">print(a,b,c)</span><br></pre></td></tr></table></figure>
 <pre><code>5 6 7
 </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">()</span>:</span></span><br><span class="line">    a = <span class="number">5</span></span><br><span class="line">    b = <span class="number">6</span></span><br><span class="line">    c = <span class="number">7</span></span><br><span class="line">    <span class="keyword">return</span> &#123;<span class="string">'a'</span> : a, <span class="string">"b"</span> : b, <span class="string">'c'</span> : c&#125;<span class="comment">###再多一个（）中可以使用不同形式的引号</span></span><br><span class="line">print(f())</span><br><span class="line">a,b,c = f()</span><br></pre></td></tr></table></figure>
 <pre><code>{&apos;a&apos;: 5, &apos;b&apos;: 6, &apos;c&apos;: 7}
-</code></pre><p>6 <strong>python function作为一个类</strong>   more reusable and generic–将操作组合成一个列表进行调用</p>
+</code></pre><p>##6 <strong>python function作为一个类</strong>   more reusable and generic–将操作组合成一个列表进行调用</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">clean_strings</span><span class="params">(strings)</span>:</span></span><br><span class="line">    result = []</span><br><span class="line">    <span class="keyword">for</span> value <span class="keyword">in</span> strings:</span><br><span class="line">        value = value.strip() <span class="comment">##去掉左右的空字符，lstrip。rstip，Python正则表达式</span></span><br><span class="line">        value = re.sub(<span class="string">'[!?#]'</span>, <span class="string">''</span>, value)<span class="comment">#python正则表达式，去掉字符</span></span><br><span class="line">        value = value.title()</span><br><span class="line">        result.append(value)</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">states = [<span class="string">' Alabama '</span>, <span class="string">'Georgia!'</span>, <span class="string">'Georgia'</span>, <span class="string">'georgia'</span>, <span class="string">'FlOrIda'</span>,<span class="string">'south carolina##'</span>, <span class="string">'West virginia?'</span>]</span><br><span class="line">clean_strings(states)</span><br></pre></td></tr></table></figure>
 <pre><code>[&apos;Alabama&apos;,
  &apos;Georgia&apos;,
@@ -435,20 +435,20 @@ NameError: name &apos;d&apos; is not defined
  &apos;Florida&apos;,
  &apos;South Carolina&apos;,
  &apos;West Virginia&apos;]
-</code></pre><p>7 <strong>将函数作为一个变量进行输入到另外一个函数，例如map</strong></p>
+</code></pre><p>##7 <strong>将函数作为一个变量进行输入到另外一个函数，例如map</strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">list1 = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> x*x</span><br><span class="line">print(list(map(f,[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>])))</span><br></pre></td></tr></table></figure>
 <pre><code>[1, 4, 9, 16, 25]
-</code></pre><p>8 <strong>lambda函数的使用，替换仅有一行代码的函数—对简单函数的简洁表示</strong></p>
+</code></pre><p>##8 <strong>lambda函数的使用，替换仅有一行代码的函数—对简单函数的简洁表示</strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">apply_to_list</span><span class="params">(some_list, f)</span>:</span> <span class="comment">#将函数作为输入变量进行输入，可以用map函数</span></span><br><span class="line">    <span class="keyword">return</span> [f(x) <span class="keyword">for</span> x <span class="keyword">in</span> some_list] <span class="comment">#简单的循环输出，输出一个列表</span></span><br><span class="line">ints = [<span class="number">4</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line">a = apply_to_list(ints, <span class="keyword">lambda</span> x: x * <span class="number">2</span>)</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
 <pre><code>[8, 0, 2, 10, 12]
 </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">my = <span class="keyword">lambda</span> x: x * <span class="number">2</span></span><br><span class="line">y = my(<span class="number">10</span>)</span><br><span class="line">print(y)</span><br></pre></td></tr></table></figure>
 <pre><code>20
 </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ints = [<span class="number">4</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line">a = list(map(<span class="keyword">lambda</span> x: x * <span class="number">2</span>,ints)) <span class="comment">#注意map的输入格式是map(function,list)</span></span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
 <pre><code>[8, 0, 2, 10, 12]
-</code></pre><p>9 <strong>partial 函数，在已经存在的函数基础上定义一个新的函数</strong></p>
+</code></pre><p>##9 <strong>partial 函数，在已经存在的函数基础上定义一个新的函数</strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_numbers</span><span class="params">(x, y)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> x + y</span><br><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> partial</span><br><span class="line">add_five = partial(add_numbers, <span class="number">5</span>)</span><br><span class="line">print(add_five(<span class="number">20</span>))</span><br></pre></td></tr></table></figure>
 <pre><code>25
-</code></pre><p>10 <strong>generator–Python 迭代器的使用</strong></p>
+</code></pre><p>##10 <strong>generator–Python 迭代器的使用</strong></p>
 <pre><code>1. 背景知识：python在进行循环时，首先是创建一个迭代器(用inter函数进行查看loop的迭代器)，迭代器，即存储要求的量然后从这个迭代器中去取相应的值；###函数一般要求返回一个值，并赋值给一个变量。
 2. 要使用关键字--yield代替return
 3.Generator expressions:::gen = (x**2 for x in range(10))
@@ -459,7 +459,7 @@ Generating squares from 1 to 100
 </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#产生迭代器的方法</span></span><br><span class="line">gen = (x**<span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>))</span><br><span class="line">print(gen)</span><br><span class="line">print(list(gen))<span class="comment">#用列举方法也可以</span></span><br></pre></td></tr></table></figure>
 <pre><code>&lt;generator object &lt;genexpr&gt; at 0x000001380DB52990&gt;
 [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
-</code></pre><p>11 <strong>Itertools的功能使用</strong></p>
+</code></pre><p>##11 <strong>Itertools的功能使用</strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line">first_letter = <span class="keyword">lambda</span> x: x[<span class="number">0</span>] <span class="comment">#return x=x(0)</span></span><br><span class="line">names = [<span class="string">'Alan'</span>, <span class="string">'Adam'</span>, <span class="string">'Wes'</span>, <span class="string">'Will'</span>, <span class="string">'Albert'</span>, <span class="string">'Steven'</span>]</span><br><span class="line"><span class="keyword">for</span> letter,names <span class="keyword">in</span> itertools.groupby(names, first_letter):</span><br><span class="line">    print(letter,list(names))<span class="comment">#注意要将names 列举出来否则就没有</span></span><br></pre></td></tr></table></figure>
 <pre><code>A [&apos;Alan&apos;, &apos;Adam&apos;]
 W [&apos;Wes&apos;, &apos;Will&apos;]
